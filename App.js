@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import { View, Text } from 'react-native';
 import * as Permissions from 'expo-permissions';
 import styles from './styles';
-import Home from  './src/components/Home';
+import Main from  './src/components/Main';
 import QRScanner from './src/components/QRScanner';
 
 export default function App() {
@@ -62,7 +62,7 @@ export default function App() {
   return (
     <View style={container}>
       {!scanner &&
-        <Home
+        <Main
           buttonState={buttonState}
           error={error}
           onScanner={handleScannerOn}
